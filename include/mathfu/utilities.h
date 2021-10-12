@@ -293,6 +293,11 @@ T Clamp(const T &x, const T &lower, const T &upper) {
   return std::max<T>(lower, std::min<T>(x, upper));
 }
 
+  
+template <class T>
+T Clamp1(const T &x, const T &lower, const T &upper) {
+  return std::max<T>(lower, std::min<T>(x, upper));
+}
 /// @brief Linearly interpolate between range_start and range_end, based on
 /// percent.
 /// @anchor mathfu_Lerp
