@@ -326,7 +326,8 @@ T Lerp(const T &range_start, const T &range_end, const T2 &percent) {
 ///
 /// @tparam T Type of the range to interpolate over.
 template <class T>
-T Lerp(const T &range_start, const T &range_end, const T &percent) {
+T Lerp(const T &range_start, const T &range_end, const T &percent) 
+{
   return Lerp<T, T>(range_start, range_end, percent);
 }
 
