@@ -27,6 +27,9 @@ static const size_t kVectorSize = 1000;
 // Number of iterations of each operation.
 static const size_t kIterations = 100;
 
+// Number of elements to iterate over.
+static const size_t kVectorSize1 = 1000;
+
 using mathfu::Random;
 using mathfu::Vector;
 
