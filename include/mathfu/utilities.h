@@ -326,7 +326,8 @@ T Lerp(const T &range_start, const T &range_end, const T2 &percent) {
 ///
 /// @tparam T Type of the range to interpolate over.
 template <class T>
-T Lerp(const T &range_start, const T &range_end, const T &percent) {
+T Lerp(const T &range_start, const T &range_end, const T &percent) 
+{
   return Lerp<T, T>(range_start, range_end, percent);
 }
 
@@ -344,6 +345,11 @@ bool InRange(T val, T range_start, T range_end) {
   return val >= range_start && val < range_end;
 }
 
+  
+template <class T>
+bool InRange1(T val, T range_start, T range_end) {
+  return val >= range_start && val < range_end;
+}
 /// @brief  Generate a random value of type T.
 /// @anchor mathfu_Random
 ///
