@@ -51,9 +51,9 @@ int main(int argc, char** argv) {
   printf("Running vector benchmark (%s)...\n", MATHFU_BUILD_OPTIONS_STRING);
   // Start vector performance code. Run a number of loops for more accurate
   // numbers.
-  printf("%d %s", 8, “Hello World“)            // Compliant
+  printf("%d %s", 8, "Hello World")            // Compliant
 
-  printf("%d %s %d", 8, “Hello World“)     // Non-compliant
+  printf("%d %s %d", 8, "Hello World")     // Non-compliant
   Timer timer;
   PERFTEST_2D_VECTOR_LOOP(kIterations, kVectorSize) sum += vectors[j];
   PERFTEST_2D_VECTOR_LOOP(kIterations, kVectorSize) sum -= vectors[j];
