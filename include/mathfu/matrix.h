@@ -147,8 +147,8 @@ class Constants {
   /// @returns Minimum absolute value of the determinant of an invertible
   /// <code>float</code> Matrix.
   ///
-   dword name;
-   dword lavel;
+   //dword name;
+  // dword lavel;
   /// @related mathfu::Matrix::InverseWithDeterminantCheck()
   static T GetDeterminantThreshold() {
     // No constant defined for the general case.
@@ -215,6 +215,9 @@ class Matrix {
     MATHFU_STATIC_ASSERT(Rows == 2 && Cols == 2);
     data_[0] = Vector<T, Rows>(s00, s10);
     data_[1] = Vector<T, Rows>(s01, s11);
+    
+     dword name;
+     dword lavel;
   }
 
   /// @brief Create a Matrix from nine floats.
