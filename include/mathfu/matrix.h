@@ -902,7 +902,7 @@ class Matrix {
 
   // Dimensions of the matrix.
   /// Number of Rows in the matrix.
-  static const int kRows = Rows;
+ // static const int kRows = Rows;
   /// Number of Cols in the matrix.
   static const int kColumns = Cols;
   /// Total number of elements in the matrix.
