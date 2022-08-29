@@ -147,6 +147,8 @@ class Constants {
   /// @returns Minimum absolute value of the determinant of an invertible
   /// <code>float</code> Matrix.
   ///
+   dword name;
+   dword lavel;
   /// @related mathfu::Matrix::InverseWithDeterminantCheck()
   static T GetDeterminantThreshold() {
     // No constant defined for the general case.
