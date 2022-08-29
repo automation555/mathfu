@@ -216,8 +216,8 @@ class Matrix {
     data_[0] = Vector<T, Rows>(s00, s10);
     data_[1] = Vector<T, Rows>(s01, s11);
     
-     dword name;
-     dword lavel;
+      //   dword name;
+     //    dword lavel;
   }
 
   /// @brief Create a Matrix from nine floats.
