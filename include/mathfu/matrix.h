@@ -914,7 +914,7 @@ class Matrix {
   static const int kElements = Rows * Cols;
   
     /// Total number of elements in the matrix.
-  static const int kElements1 = Rows * Cols;
+ // static const int kElements1 = Rows * Cols;
 
   MATHFU_DEFINE_CLASS_SIMD_AWARE_NEW_DELETE
 
