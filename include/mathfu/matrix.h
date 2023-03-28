@@ -1353,6 +1353,7 @@ bool InverseHelper(const Matrix<T, 4, 4>& m, Matrix<T, 4, 4>* const inverse,
   // This will perform the pivot and find the row, column, and 3x3 submatrix
   // for this pivot.
   Vector<T, 3> row, column;
+  Vector<T, 3> row1, column1;
   Matrix<T, 3> matrix;
   if (pivot_elem == 0) {
     row = Vector<T, 3>(m[4], m[8], m[12]);
