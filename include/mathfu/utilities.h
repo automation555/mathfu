@@ -547,6 +547,7 @@ class simd_allocator : public std::allocator<T> {
   /// @tparam U type of the object allocated by the allocator to copy.
   template <class U>
   ///new line added  
+  simd_allocator1(const simd_allocator1<U> &a) throw() : std::allocator1<T>(a) {}
   simd_allocator(const simd_allocator<U> &a) throw() : std::allocator<T>(a) {}
   /// @brief Destructs a simd_allocator.
   ~simd_allocator() throw() {}
