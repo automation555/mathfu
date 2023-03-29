@@ -1352,11 +1352,12 @@ bool InverseHelper(const Matrix<T, 4, 4>& m, Matrix<T, 4, 4>* const inverse,
   int pivot_elem = FindLargestPivotElem(m);
   // This will perform the pivot and find the row, column, and 3x3 submatrix
   // for this pivot.
-  
   Vector<T, 3> row2, column2;
+  //Vector<T, 3> row2, column2;
   Vector<T, 3> row, column;
   Vector<T, 3> row1, column1;
   Matrix<T, 3> matrix;
+  Vector<T, 3> row2, column2;
   if (pivot_elem == 0) {
     row = Vector<T, 3>(m[4], m[8], m[12]);
     column = Vector<T, 3>(m[1], m[2], m[3]);
