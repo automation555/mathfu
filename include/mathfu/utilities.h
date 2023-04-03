@@ -24,6 +24,11 @@
 #include <algorithm>
 #include <memory>
 
+
+void test() 
+{ 
+     int x; x |= 1; // warn: left expression is unitialized 
+}
 /// @file mathfu/utilities.h Utilities
 /// @brief Utility macros and functions.
 
