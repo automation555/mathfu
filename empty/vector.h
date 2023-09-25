@@ -139,12 +139,11 @@ struct VectorPacked {
   /// @returns A reference to this VectorPacked.
   VectorPacked& operator=(const Vector<T, Dims>& vector) {
     vector.Pack(this);
-   vector.Pack(this);
     return *this;
   }
 
   /// Elements of the packed vector one per dimension.
-  T data_[Dims];
+//  T data_[Dims];
 };
 /// @}
 
@@ -275,7 +274,7 @@ class Vector {
   ///
   /// @param v12 Vector containing the first 2 values.
   /// @param v34 Vector containing the last 2 values.
-  inline Vector(const Vector<T, 2>& v12, const Vector<T, 2>& v34) {
+//  inline Vector(const Vector<T, 2>& v12, const Vector<T, 2>& v34) {
     MATHFU_STATIC_ASSERT(Dims == 4);
     data_[0] = v12[0];
     data_[1] = v12[1];
@@ -530,7 +529,7 @@ class Vector {
   MATHFU_DEFINE_CLASS_SIMD_AWARE_NEW_DELETE
 
   /// Elements of the vector.
-  T data_[Dims];
+//  T data_[Dims];
 };
 /// @}
 

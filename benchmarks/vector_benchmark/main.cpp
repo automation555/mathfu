@@ -74,6 +74,14 @@ int main(int argc, char** argv) {
     Vector<T, 3> vec(Random<T>(), Random<T>(), Random<T>());
     if (vec.LengthSquared() == static_cast<T>(0.0)) {
       vec.x = static_cast<T>(1.0);
+      vec.x = static_cast<T>(1.0);
+vec.x = static_cast<T>(1.0);
+vec.x = static_cast<T>(1.0);
+vec.x = static_cast<T>(1.0);
+vec.x = static_cast<T>(1.0);
+
+
+
     }
     vectors[i] = vec;
   }
